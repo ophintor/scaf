@@ -1,0 +1,112 @@
+body {background-color: #e8f5e9;                    /* changes background colour to light green */
+    font-size: 20px;                               /* changes all fonts to larger size within the body of the website */
+    margin-bottom : -5px;}
+
+.jumbotron img {margin-top: -45px;                              /* moves the logo up 45px */
+    margin-left: 50px;                              /* moves the logo right 50px */
+    float: left;                                    /* places the logo to the left side of the main header */
+    width: auto;}                                   /* auto scales the logo, some reason ensures jumbotron stays green? */
+
+.jumbotron {
+    background-color: #a5d6a7;}                     /* makes the jumbotron dark green */ 
+
+.navbar {
+    background-color: #a5d6a7;                      /* makes the navbar the same colour as the jumbotron */
+    left: 0px;                                      /* makes the navbar span the whole width on the left */
+    min-width:100%;                               /* makes the navbar span the whole width on the right */
+    margin-top: -30px;}
+
+#WelcomePic h2 {padding-top: 50px;}                 /* provides adequate space between the navbar and the "Welcome" header */
+
+#WelcomePic img {padding-top: 50px; padding-right: 50px;}               /* moves the photo to be along side the Welcome section */
+
+#WhatWeDoTitle h2 {padding-top: 15px;}              /* bumps "What We Do" header down 15px */
+
+#Meetings h3 {margin-top: -2px;}                    /* bumps the subheadings of the meetings up 2px */
+
+#myNavbar a {color: black}
+
+#myNavbar a:hover {text-decoration: underline;}      /* underlines hovered links */
+
+#myNavbar a:link {background: transparent;}          /* disables highlight of links when hovered over */
+
+#myNavbar a:visited {color: black;}                  /* changes font colour of links to black */
+
+#myNavbar ul li:hover a {background: transparent;}   /* ensures that 'Groups' does not highlight white when hovered over */
+
+#importHeader h2 {padding-top: 15px;}
+
+#footertron {margin-bottom: -50px;
+        min-width: 100%;
+        float:left;
+        position: absolute;}
+
+
+#gp {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#gp:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9);} /* Black w/ opacity */
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+/*.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}*/
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;

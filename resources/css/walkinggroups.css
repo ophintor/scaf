@@ -1,0 +1,34 @@
+body {background-color: #e8f5e9;                    /* changes background colour to light green */
+    font-size: 20px;                               /* changes all fonts to larger size within the body of the website */
+    margin-bottom : -5px;}
+
+.jumbotron img {margin-top: -45px;                              /* moves the logo up 45px */
+    margin-left: 50px;                              /* moves the logo right 50px */
+    float: left;                                    /* places the logo to the left side of the main header */
+    width: auto;}                                   /* auto scales the logo, some reason ensures jumbotron stays green? */
+
+.jumbotron {
+    background-color: #a5d6a7;}                     /* makes the jumbotron dark green */ 
+
+.navbar {
+    background-color: #a5d6a7;                      /* makes the navbar the same colour as the jumbotron */
+    left: 0px;                                      /* makes the navbar span the whole width on the left */
+    min-width:100%;                               /* makes the navbar span the whole width on the right */
+    margin-top: -30px;}
+
+#myNavbar a {color: black}
+
+#myNavbar a:hover {text-decoration: underline;}      /* underlines hovered links */
+
+#myNavbar a:link {background: transparent;}          /* disables highlight of links when hovered over */
+
+#myNavbar a:visited {color: black;}                  /* changes font colour of links to black */
+
+#myNavbar ul li:hover a {background: transparent;}   /* ensures that 'Groups' does not highlight white when hovered over */
+
+#footertron {margin-bottom: -50px;
+        min-width: 100%;
+        float:left;
+        position: absolute;}
+
+#NomadLink a {text-align: right}
