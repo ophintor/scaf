@@ -1,23 +1,20 @@
-<!DOCTYPE html>                                                                 <!Instruct browser that the page is written in HTML5>
-<html lang="en">                                                                <!Sets the language of the HTML content to English>
+<!DOCTYPE html>                                                                                              <!-- Instruct browser that the page is written in HTML5 -->
+<html lang="en">                                                                                             <!-- Sets the language of the HTML content to English -->
 
 <head>
-    <meta charset="utf-8">                                                      <!Metadata to set the characterset to UTF-8>
-    <title>About SCAF</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">        <!Sets the page width to mirror the width of the device, allows dynamic resizing for various devices>
-    <!Below 3 lines include the Bootstrap web framework, via CDN.>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!Used for official Bootstrap CSS>
-    <link rel="stylesheet" type="text/css" href="resources/css/about.css" />                             <!Custom CSS file, must come after Bootstrap one>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>             <!For the jQuery library>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>          <!For JS>
-    <div class="jumbotron">                                                                              <!Makes the main 'header' box containing logo + title>
-        <h1 class="text-center" id="title">
-        <a href="index.html"><img class="img-responsive" style="align-content: center" src="resources/media/SCAF.gif" alt="Logo"></a>
-            <span style="text-centre">Shirehampton Community Action Forum</span></h1>
-    </div>
-    <!--#include virtual="navbar.html" -->
+        <title>About SCAF</title>
+        <meta charset="utf-8">                                                                               <!-- Metadata to set the characterset to UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">                                 <!-- Sets the page width to mirror the width of the device, allows dynamic resizing for various devices -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Used for official Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="resources/css/about.css" />                             <!-- Custom CSS file, must come after Bootstrap one -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>             <!-- For the jQuery library -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>          <!-- For JS -->
+        <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
+
 <body>
+    <div w3-include-html="header.html"></div>
+
     <div class="container-fluid" id="WelcomePic">
         <div class="row">
             <div class="col-xs-1"></div>
@@ -25,8 +22,7 @@
                 <h2>About Us</h2>
                 <div class="text-centre">
                     <p>
-                        <strong>The overall aim of SCAF is to improve the quality of life for everyone living and working in Shirehampton.</strong>
-                        <br />
+                        <strong>The overall aim of SCAF is to improve the quality of life for everyone living and working in Shirehampton.</strong><br />
                         As a charity the Shirehampton Community Action Forum takes pride in helping improve the area of Shirehampton for all those who work and live there. We accomplish this by various different groups and projects, however our most recent and major project is being a lead partner within the Shire Community Plan.
                     </p>
                     <h3>Shire Door to Door Shopping Trips</h3>
@@ -39,10 +35,8 @@
     </div>
 </body>
 
-<div class="jumbotron" id="footertron">
-    <footer class="text-center">Shirehampton Community Action Forum is a Company Limited by Guarantee<br />
-            Registered in England, number 4686738. Registered Charity number 1099221<br />
-            Registered Office: Shirehampton Public Hall - Station Road - Bristol - BS11 9TU
-    </footer>
-</div>
+<div w3-include-html="footer.html"></div>
+
+<script>w3.includeHTML();</script>
+
 </html>
