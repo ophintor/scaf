@@ -1,106 +1,78 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<!--Instruct browser that the page is written in HTML5--><!--Sets the language of the HTML content to English--><!--Instruct browser that the page is written in HTML5--><!--Sets the language of the HTML content to English-->
-<meta charset="utf-8">
-<!--Metadata to set the characterset to UTF-8--><title>Contact Us</title>
+<!DOCTYPE html> <!-- Instruct browser that the page is written in HTML5 -->
+<html lang="en">
+<!-- Sets the language of the HTML content to English -->
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--Sets the page width to mirror the width of the device, allows dynamic resizing for various devices--><!--Bellow 3 lines include the Bootstrap web framework, via CDN.-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!--Used for official Bootstrap CSS-->
-<link rel="stylesheet" type="text/css" href="resources/css/contact-us.css">
-<!--Custom CSS file, must come after Bootstrap one-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script><!--For the jQuery library-->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!--For JS-->
-</head>                                                                 
-                                                                
-    
-                                                                 
-                                                                
-    
+<head>
+    <title>About SCAF</title>
+    <meta charset="utf-8"> <!-- Metadata to set the characterset to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Sets the page width to mirror the width of the device, allows dynamic resizing for various devices -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Used for official Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="resources/css/about.css" />
+    <!-- Custom CSS file, must come after Bootstrap one -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- For the jQuery library -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- For JS -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
 <body>
-<div class="jumbotron"><!--Makes the main 'header' box containing logo + title-->
-<h1 class="text-center"> <a href="index.html"><img class="img-responsive" style="" src="resources/media/SCAF.gif" alt="Logo"></a> <span style="">Shirehampton Community Action Forum</span></h1>
-</div>
-<nav class="navbar navbar-float"> </nav>
-<div class="container-fluid">
-<div class="navbar-default"> <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span><span class="icon-bar"></span> <span class="icon-bar"></span>
-</button> </div>
-<div class="collapse navbar-collapse" id="myNavbar">
-<div class="col-xs-2"></div>
-<ul class="nav navbar-nav">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About Us</a></li>
-<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#">Groups <span class="caret"></span></a>
-<ul class="dropdown-menu">
-<li><a href="csag.html">Community Safety
-Action Group</a></li>
-<li><a href="shiregreenseag.html">Shirehampton
-Greens Action Group</a></li>
-<li><a href="plan.html">Shire Community Plan</a></li>
-<li><a href="walkinggroups.html">Walking Groups</a></li>
-</ul>
-</li>
-<li><a href="finance.html">Finance</a></li>
-<li><a href="contact-us.html">Contact Us</a></li>
-<li><a href="planningwatch.html">Planning Watch</a></li>
-<li><a href="gallery.html">Photo Gallery</a></li>
-<li><a href="support.html">Support Us</a></li>
-</ul>
-</div>
-</div>
-<div class="container-fluid" id="WelcomePic">
-<div class="row">
-<div class="col-xs-1"></div>
-<div class="col-sm-9">
-<h2>Shire Community Plan</h2>
-<div class="text-centre">
-<p> </p>
-<h3>What is a Community Plan?</h3>
-<ul type="disc">
-<li>Identifies local problems &amp; opportunities</li>
-<li>Sets out an achievable and long term vision for the future</li>
-<li>Prepares a plan of action to achieve this vision</li>
-</ul>
-For the full plan, <a href="resources/media/Community%20Plan.pdf">click
-here</a>.<br>
-For a summary <a href="resources/media/Plan%20Summary.pdf">click
-here</a>.<br>
-<br>
-The views of all of the community were gathered through a comprehensive
-survey &amp; community participation/consultation events. The plan
-involves looking at all aspects of living and/or working in a community
-and&nbsp;has sections on community safety, heath, traffic and
-transport, community facilities/buildings, housing &amp; planning,
-parks and green spaces, employment and enterprise etc. It can include
-everything we think is relevant in Shire and we can decide what's
-important to us!<br>
-<b>Who did it?</b> This was a partnership project led by
-local residents, Shire Community Action Forum (SCAF) and Cotswold
-Community Association.
-<h3>Why do a Community Plan for Shirehampton?</h3>
-<ul type="disc">
-<li>Gives the whole community the opportunity to have their say</li>
-<li>It provides detailed information of what is important to
-our community</li>
-<li>Gives a snapshot of what are the community issues that need
-addressing now, and provides a vision of where we would like to be in
-the future with a clear action plan</li>
-<li>Gives Bristol City Council documented views and evidence of
-what residents in Shire see as important and what our community needs</li>
-<li>It provides useful information and supporting evidence when
-making grant &amp; funding applications and attracting investment
-to our community</li>
-</ul>
-<br>
-<br>
-</div>
-</div>
-</div>
-</div>
-<div class="jumbotron" id="footertron"> <footer class="text-center">Shirehampton Community Action Forum is a
-Company Limited by Guarantee<br>
-Registered in England, number 4686738. Registered Charity number 1099221<br>
-Registered Office: Shirehampton Public Hall - Station Road - Bristol -
-BS11 9TU</footer></div>
-</body></html>
+    <div w3-include-html="header.html"></div>
+
+    <div class="container-fluid" id="WelcomePic">
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-sm-9">
+                <h2>Shire Community Plan</h2>
+                <div class="text-centre">
+                    <p> </p>
+                    <h3>What is a Community Plan?</h3>
+                    <ul type="disc">
+                        <li>Identifies local problems &amp; opportunities</li>
+                        <li>Sets out an achievable and long term vision for the future</li>
+                        <li>Prepares a plan of action to achieve this vision</li>
+                    </ul>
+                    For the full plan, <a href="resources/media/Community%20Plan.pdf">click
+                        here</a>.<br>
+                    For a summary <a href="resources/media/Plan%20Summary.pdf">click
+                        here</a>.<br>
+                    <br>
+                    The views of all of the community were gathered through a comprehensive
+                    survey &amp; community participation/consultation events. The plan
+                    involves looking at all aspects of living and/or working in a community
+                    and&nbsp;has sections on community safety, heath, traffic and
+                    transport, community facilities/buildings, housing &amp; planning,
+                    parks and green spaces, employment and enterprise etc. It can include
+                    everything we think is relevant in Shire and we can decide what's
+                    important to us!<br>
+                    <b>Who did it?</b> This was a partnership project led by
+                    local residents, Shire Community Action Forum (SCAF) and Cotswold
+                    Community Association.
+                    <h3>Why do a Community Plan for Shirehampton?</h3>
+                    <ul type="disc">
+                        <li>Gives the whole community the opportunity to have their say</li>
+                        <li>It provides detailed information of what is important to
+                            our community</li>
+                        <li>Gives a snapshot of what are the community issues that need
+                            addressing now, and provides a vision of where we would like to be in
+                            the future with a clear action plan</li>
+                        <li>Gives Bristol City Council documented views and evidence of
+                            what residents in Shire see as important and what our community needs</li>
+                        <li>It provides useful information and supporting evidence when
+                            making grant &amp; funding applications and attracting investment
+                            to our community</li>
+                    </ul>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div w3-include-html="footer.html"></div>
+    <script>w3.includeHTML();</script>
+
+</body>
+
+</html>
