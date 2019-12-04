@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Checkout
+      uses: actions/checkout@v1
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
