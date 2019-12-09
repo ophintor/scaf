@@ -1,0 +1,127 @@
+<!DOCTYPE html> <!-- Instruct browser that the page is written in HTML5 -->
+<html lang="en">
+<!-- Sets the language of the HTML content to English -->
+
+<head>
+    <title>SCAF Gallery</title>
+    <meta charset="utf-8"> <!-- Metadata to set the characterset to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Sets the page width to mirror the width of the device, allows dynamic resizing for various devices -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Used for official Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="resources/css/gallery.css" />
+    <!-- Custom CSS file, must come after Bootstrap one -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <!-- For the jQuery library -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <!-- For JS -->
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+
+<body>
+    <div w3-include-html="header.html"></div>
+
+    <script>
+        function picturino(sw, t) {
+            var pic;
+            var title;
+            pic = sw;
+            title = t;
+            document.getElementById('target').src = pic;
+            document.getElementById('Header').h3 = title
+        }
+    </script>
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+
+    <div class="container">
+        <div class="row">
+            <h1>Photo Gallery</h1>
+            <div class="row" id="gal">
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 1"><img id="gp"
+                            src="resources/media/towers.jpg" onclick='picturino("resources/media/towers.jpg")'
+                            class="thumbnail" height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 2"><img id="gp"
+                            src="resources/media/gathering.jpg" class="thumbnail"
+                            onclick='picturino("resources/media/gathering.jpg")' height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 3"><img id="gp"
+                            src="resources/media/urban.jpg" class="thumbnail"
+                            onclick='picturino("resources/media/urban.jpg")' height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 4"><img id="gp"
+                            src="resources/media/outdoors.jpg" class="thumbnail"
+                            onclick='picturino("resources/media/outdoors.jpg")' height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 5"><img id="gp"
+                            src="resources/media/trees.jpg" class="thumbnail"
+                            onclick="picturino('resources/media/trees.jpg')" height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-6 col-6"><a href="#myModal" data-toggle="modal" title="Image 6"><img id="gp"
+                            src="resources/media/meeting.jpg" class="thumbnail"
+                            onclick="picturino('resources/media/meeting.jpg')" height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 7"><img id="gp"
+                            src="resources/media/springfield.jpg" class="thumbnail"
+                            onclick="picturino('resources/media/springfield.jpg')" height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 8"><img id="gp"
+                            src="resources/media/shirehampton-trainstation.jpg"
+                            onclick="picturino('resources/media/shirehampton-trainstation.jpg')" class="thumbnail"
+                            height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 9"><img id="gp"
+                            src="resources/media/award.jpg" class="thumbnail" height="200"
+                            onclick="picturino('resources/media/award.jpg')"> </a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 10"><img
+                            id="gp" src="http://via.placeholder.com/600x350" class="thumbnail" height="200"
+                            onclick="picturino('http://via.placeholder.com/600x350')"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 11"><img
+                            id="gp" src="http://via.placeholder.com/600x350" class="thumbnail"
+                            onclick="picturino('http://via.placeholder.com/600x350')" height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 12"><img
+                            id="gp" src="http://via.placeholder.com/600x350" class="thumbnail"
+                            onclick="picturino('http://via.placeholder.com/600x350')" height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 13"><img
+                            id="gp" src="http://via.placeholder.com/600x350" class="thumbnail"
+                            onclick="picturino('http://via.placeholder.com/600x350')" height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 14"><img
+                            id="gp" src="http://via.placeholder.com/600x350" class="thumbnail"
+                            onclick="picturino('http://via.placeholder.com/600x350')" height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 15"><img
+                            id="gp" src="http://via.placeholder.com/600x350" class="thumbnail"
+                            onclick="picturino('http://via.placeholder.com/600x350')" height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 4"><img id="gp"
+                            src="resources/media/outdoors.jpg" class="thumbnail"
+                            onclick='picturino("resources/media/outdoors.jpg")' height="200"></a></div>
+
+                <div class="col-lg-4 col-sm-4 col-6"><a href="#myModal" data-toggle="modal" title="Image 16"><img
+                            id="gp" src="http://via.placeholder.com/600x350" class="thumbnail"
+                            onclick="picturino('http://via.placeholder.com/600x350')" height="200"></a></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <!span class="close">&times;</span>
+            <img class="modal-content" id="target">
+            <div id="caption"></div>
+    </div>
+    <!script>
+        <!var modal=document.getElementById('myModal'); var span=document.getElementsByClassName("close")[0];
+            span.onclick=function() { 'myModal' .style.display="none" ; </script>>>
+
+    <div w3-include-html="footer.html"></div>
+    <script>w3.includeHTML();</script>
+
+</body>
+
+</html>
